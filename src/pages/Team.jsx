@@ -36,7 +36,7 @@ const Team = () => {
       name: "Hazem Mahmoud Al-Melli",
       role: "Computer Engineer",
       img: hazem,
-      linkedin: "https://www.linkedin.com/in/hazem-al-melli-a0a0992a5/",
+      linkedin: "https://www.linkedin.com/in/hazem-al-melli/",
       github: "https://github.com/HazemAlMili",
     },
     {
