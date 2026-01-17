@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../images/WhatsApp Image 2025-08-07 at 19.38.18_6aa2da4a.png";
 import style from "../style/Navbar.module.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleNavClick = () => {
     setMenuOpen(false);
@@ -19,7 +20,7 @@ const Navbar = () => {
 
   const handleLogout = () => {
     localStorage.removeItem("isAuth");
-    window.location.href = "/login";
+    navigate("/login");
   };
 
   return (

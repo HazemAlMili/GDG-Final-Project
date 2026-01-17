@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
+  const navigate = useNavigate();
+  
   const handleDelete = () => {
     localStorage.removeItem('cartItem');
     setCartItem(null);
@@ -33,7 +36,7 @@ const Cart = () => {
         </p>
         <button
           style={{ marginTop: '18px', padding: '10px 24px', background: '#1976d2', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '16px' }}
-          onClick={() => window.location.href = '/order'}
+          onClick={() => navigate('/order')}
         >
           Proceed to Checkout
         </button>

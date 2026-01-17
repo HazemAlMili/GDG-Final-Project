@@ -39,7 +39,7 @@ export default function Home() {
     <div className="home">
       <div className="landing">
         <h1>Representing the world’s finest real estate</h1>
-        <Link to="/About">
+        <Link to="/about">
           <button className="btn-17">
             <span className="text-container">
               <span className="text">About Us</span>
@@ -57,12 +57,12 @@ export default function Home() {
         </p>
       </div>
       <div className="home-properties">
-        <Link to="/Villa" className="project">
+        <Link to="/villa" className="project">
           <img src={villas1} alt="Property 1" />
           <h1 className="animated-title" id="text-1">
             {animateText(text1)}
           </h1>
-          <Link to="/Villa">
+          <Link to="/villa">
             <button className="btn-17">
               <span className="text-container">
                 <span className="text">View</span>
@@ -70,10 +70,10 @@ export default function Home() {
             </button>
           </Link>
         </Link>
-        <Link to="/Department" className="project">
+        <Link to="/department" className="project">
           <img src={apartments1} alt="Property 1" />
           <h1>{animateText(text2)}</h1>
-          <Link to="/Department">
+          <Link to="/department">
             <button className="btn-17">
               <span className="text-container">
                 <span className="text">View</span>
@@ -92,10 +92,10 @@ export default function Home() {
             </button>
           </Link>
         </Link>
-        <Link to="/Villa" className="project">
+        <Link to="/villa" className="project">
           <img src={villas2} alt="Property 1" />
           <h1>{animateText(text4)}</h1>
-          <Link to="/Villa">
+          <Link to="/villa">
             <button className="btn-17">
               <span className="text-container">
                 <span className="text">View</span>
@@ -105,7 +105,7 @@ export default function Home() {
         </Link>
         <div className="more-container">
           <span></span>{" "}
-          <Link to="/Villa" className="more">
+          <Link to="/villa" className="more">
             see more Projects
           </Link>
         </div>
